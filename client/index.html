@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./cart.css">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/87cfad1dd9.js" crossorigin="anonymous"></script>
+  <title>Organic</title>
+</head>
+
+<body>
+
+  <!-- Navbar  -->
+
+  <nav class="navbar navbar-expand-lg pb-3 ">
+    <div class="container ">
+      <a class="navbar-brand" href="#"> Organic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="bi bi-list"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">Feature</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  " href="#Product">
+              Product
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  " href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+
+          <span id="toggleCart" onclick="setupCartToggle()"><i class="bi bi-basket2-fill"></i></span>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Main Section -->
+  <section class="main py-5" id="home">
+    <div class="container  ">
+      <div class="row py-5">
+        <div class="col-lg-6 py-5">
+          <p class="m-0">Organic products</p>
+          <h1>Fresh Organic</h1>
+          <div class="line my-4"></div>
+          <p>Organic food is food and drinks produces by methods complying with the standards of organic farming.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cart Container -->
+
+  <div class=" cart container" id="mycart">
+
+    <div class="sidebar">
+      <div class="head">
+        <p>My Cart</p>
+      </div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">$0.00</h2>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Welcome Section -->
+
+
+  <section class="welcome text-center pb-5 " id="feature">
+    <div class="container py-5">
+
+      <div class="row ">
+        <div class="col-lg-4 py-4">
+          <div class="card py-3">
+            <div class="card-body">
+              <span><i class="bi bi-telephone"></i></span>
+              <h2>24/07 Support</h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 py-4">
+          <div class="card py-3">
+            <div class="card-body">
+              <span><i class="bi bi-truck"></i></span>
+              <h2>Free Shipping</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-4">
+          <div class="card py-3">
+            <div class="card-body">
+              <span><i class="bi bi-feather"></i></span>
+              <h2>Fresh & Healthy</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Product Section -->
+
+
+  <section class="product">
+    <div class="container py-5">
+      <div class="row py-5  ">
+        <div class="col-lg-5 m-auto text-center">
+          <h1> What's Trending
+            <h6 style="color:red;">Be Healthy Organic Food</h6>
+
+        </div>
+      </div>
+      <div class="row temp">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV6Y1OgRKH3M61QaiVv-MHcmMEkTZfgKfO8sNTV-vhPkDDrMvd"
+                height="50%" width="70%" alt="fruit">
+
+            </div>
+
+          </div>
+
+          <div>
+            <h6>Orange</h6>
+            <p><i class="bi bi-currency-rupee"></i> 50 per kg</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TbHDGaZXOnGumCE7grZ73pr2GhJTrgWKio5gX5YmdY8pjjBD"
+                height="70%" width="80%" alt="fruit">
+
+            </div>
+
+          </div>
+
+          <div>
+            <h6>Cabbage</h6>
+            <p><i class="bi bi-currency-rupee"></i> 10 per kg</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTidHDj7Fw77972K22tGoEE1HEZXXD-HDGMNoACp3NP009KgET9"
+                height="60%" width="60%" alt="fruit">
+
+            </div>
+
+          </div>
+
+          <div>
+            <h6>Pumpkin</h6>
+            <p><i class="bi bi-currency-rupee"></i> 20 per kg</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ96BTE_yu21muqSc5Wt0o9ASg_eMrFlKURE8gsNOZnwZ7NAbPa"
+                height="50%" width="60%" alt="fruit">
+
+            </div>
+
+          </div>
+
+          <div>
+            <h6>Apple</h6>
+            <p><i class="bi bi-currency-rupee"></i> 40 per kg </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+   
+
+  <!-- Discount Section -->
+  <section class="discount py-5 mb-4">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-lg-10 m-auto text-center">
+          <h1 class="head1">Discount Coupon For 20% : PWCV01424</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Product Section -->
+
+
+  <section class="product" id="Product">
+    <div class="container py-5">
+      <div class="row py-5  ">
+        <div class="col-lg-5 m-auto text-center">
+          <h1> Our Products
+            <h6 style="color:red;">Be Healthy Organic Food</h6>
+
+        </div>
+      </div>
+      <div class="row temp" id="product-container">
+        <div></div> <!-- Div to hold the products -->
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 text-center m-auto">
+          <button class="btn1" id="loadMore">Click For More </button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- About Section -->
+
+
+  <section class="about py-5" id="about">
+    <div class="container py-5">
+      <div class="row ">
+        <div class="col-lg-5 py-5 col-md-6 col-sm-12 col-12">
+          <p class="m-0">Organic products </p>
+          <h1>About Our Organic</h1>
+          <div class="line my-4"></div>
+          <p>Organic food is food and drinks produces by methods complying with the standards of organic farming.
+            Standards vary worldwide, but organic farming features practices that cycle resources. </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- Contact Section --> 
+  
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 m-auto text-center mt-5">
+          <h1>Contact Us</h1>
+          <h6 style="color:red;">Always Be In Touch With Us </h6>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-lg-9 m-auto">
+          <div class="row">
+            <div class="col-lg-4">
+              <h6>Location</h6>
+              <p>MP Gwalior</p>
+
+              <h6>Phone</h6>
+              <p>91XXXXXXXX</p>
+
+              <h6>Email</h6>
+              <p>organic@gmail.com</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text " class="form-control bg-light" placeholder="First Name ">
+                </div>
+
+                <div class="col-lg-6">
+                  <input type="text " class="form-control bg-light" placeholder="Last Name ">
+                </div>
+
+
+              </div>
+              <div class="row">
+                <div class="col-lg-12 py-3">
+                  <textarea name="" class="form-control bg-light" placeholder="message" id="" cols="10"
+                    rows="5"></textarea>
+                </div>
+
+              </div>
+              <button class="btn1">Submit</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer Section -->
+
+  <section class="news py-5">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-lg-9 m-auto text-center">
+          <h1>
+            Join Our Society</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11">
+          <div class="row">
+            <div class="col-lg-3 py-3 mt-3">
+              <h5 class="pb-3">Customer Care </h5>
+              <p>Regular</p>
+              <p>On Time</p>
+              <p>Always Care</p>
+
+
+            </div>
+            <div class="col-lg-3 py-3 mt-3">
+              <h5 class="pb-3">Customer Care </h5>
+              <p>Regular</p>
+              <p>On Time</p>
+              <p>Always Care</p>
+
+
+            </div>
+            <div class="col-lg-3 py-3 mt-3">
+              <h5 class="pb-3">Customer Care </h5>
+              <p>Regular</p>
+              <p>On Time</p>
+              <p>Always Care</p>
+
+
+            </div>
+            <div class="col-lg-3 py-3 mt-3">
+              <h5 class="pb-3">Customer Care </h5>
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <span><i class="fab fa-facebook"></i></span>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <p class="text-center">Copyright 2021 All rights reserved | Made By Astha Chaurasia</p>
+    </div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="cart.js"></script>
+
+
+  
+</body>
+
+</html>

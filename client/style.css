@@ -1,0 +1,343 @@
+*{
+    padding:0;
+    margin:0 ;
+     box-sizing:border-box;
+}
+p{
+    font-family: 'Poppins',sans-serif;
+}
+   
+ 
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition:all 0.4s;
+    font-family: 'Poppins',sans-serif;
+}
+
+.nav-item a:hover{
+    color:rgb(20,219,20);
+}
+
+.navbar-brand{
+    height:60px;
+    width:100px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bi-basket2-fill{
+    font-size: 30px;
+    color:black;
+    cursor:pointer;
+    padding-top: 5px;
+}
+
+ 
+
+.log-btn {
+    margin-right: 20px;
+    height:40px;
+    margin-top: 5px;
+    background-color: rgb(248,26,92);
+    border:0px;
+}
+.log-btn:hover{
+    background-color: red;
+
+}
+
+.navbar-toggler{
+    font-size: 23px;
+    color: black;
+    /* border: none; */
+}
+.navbar-toggler:focus{
+outline: none;
+box-shadow: none;
+}
+
+.main{
+    background: url("./images/products/banner.jpg")no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100%;
+}
+.main h1{
+    font-size: 5rem;
+    font-family: 'Poppins',cursive;
+}
+  .main p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+   padding-top: 100px;
+  }
+
+  .main p:nth-child(2){
+    font-size: 18px;
+   color: grey;
+
+  }
+.line{
+    height: 6px;
+    width: 30%;
+    background: rgb(20,219,20);
+    display: inline-block;
+}
+
+
+  .about{
+    background: url("./images/about/about-banner.jpg")no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width:100%;
+  }
+  .about h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+   
+.about p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    
+  }
+  .about p:nth-child(2){
+    font-size: 18px;
+   color: grey;
+
+  }
+   
+.welcome{
+    background: white;
+}
+
+.welcome .card{
+border:0px;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 1px 4px 8px 5px rgba(0, 0, 0, 0.1);
+height:10rem;
+width:15rem;
+margin-left:3rem ;
+background: #062A29;
+color: white;
+transition: transform 0.3s ease;
+}
+
+.welcome .card:hover{
+   transform: scale(1.1);
+
+}
+
+ 
+.welcome i{
+    font-size: 45px;
+    color:rgb(20,219,20);
+}
+.welcome h2{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.welcome .card:hover h2 {
+    color: white;
+}
+
+ h1{
+    font-weight:700 ;
+ }
+
+
+ .btn1{
+    height: 45px;
+    width:40%;
+    border:none;
+    outline: none;
+    background-color: green;
+    color:white;
+    font-weight: 700;
+    border-radius: 60px;
+ }
+ .btn1:hover{
+    background-color: rgb(14, 104, 14);
+ }
+
+
+ 
+  
+
+
+
+    .head1{
+        font-weight: 400;
+        margin:0;
+        font-size: 20px;
+        padding-bottom: 5px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    }
+
+    .btnc{
+        height: 40px;
+        width:60%;
+        outline:none;
+        border:none;
+        color:white;
+        background: rgb(20,219,20);
+        border-radius: 50px;
+        margin:0 auto;
+        display: block;
+        transition: all 0.4s;
+    }
+.btnc:hover{
+    outline: none;
+    border:1px solid rgb(20,219,20);
+    color:rgb(20,219,20);
+    background: transparent;
+    border-radius: 50px;
+}
+.custom-img:hover{
+box-shadow: 1px 4px 8px 5px rgba(0, 0, 0, 0.1);
+ 
+}
+ 
+.card-body img {
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card-body img:hover {
+    box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.2); /* Apply shadow on hover */
+    border-radius: 10px;
+    transform: scale(1.1);
+} 
+
+ 
+ 
+ 
+
+
+
+.discount{
+    color:black;
+    background: #D1E7E1;
+}
+.discount .head1{
+    font-size: 30px;
+}
+
+.news{
+    background-color: black;
+    color:white;
+}
+  
+  .news p{
+    margin:0;
+  }
+  
+.fab {
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding-right: 5px;
+    color:white;
+    padding-left: 3px;
+}
+.fab:hover{
+    font-size: 2rem;
+}
+ @media (max-width: 1199.98px) {
+    .about h1 {
+        font-size: 2.5rem; /* Adjust the size as needed */
+    }
+
+    .about p {
+        font-size: 16px; /* Adjust the size as needed */
+    }
+    .contact .col-lg-8 p {
+        font-size: 14px; /* Adjust the size as needed */
+    }
+
+    @media (max-width: 1199.98px){
+        .main h1{
+            font-size: 56px;
+        }
+    }
+ }
+    @media(max-width:768.98px){
+/* .main h1{
+    font-size: 46px;
+} */
+.main p.m-0 {
+    padding-top: 50px; /* Remove padding */
+}
+
+.main {
+    height: auto;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 3rem;
+}
+
+.main p {
+    font-size: 1rem;
+}
+
+.line {
+    width: 30%;
+}
+
+.welcome .col-lg-4{
+    width:320px;
+    height:210px;
+ }
+   .product .temp {
+    justify-content: center;
+
+   } 
+   .product .col-lg-3{
+height:24rem;
+width:16rem;
+   }
+    }
+
+
+@media(max-width:480px){
+    .welcome .card{
+       margin-left: 90px;
+       margin-right: 60px;
+    }
+    .product .temp{
+         justify-content: center;
+           }
+           .product .btn1{
+            width:60%;
+           }
+}
+@media(max-width:320px){
+    .main h1 {
+        font-size: 2.23rem;
+    }  
+    .main p {
+        font-size: 0.8rem;
+    }
+    .line {
+        width: 40%;
+    }
+
+     
+    .welcome .card{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .discount .head1{
+        font-size: 1.3rem;
+    }
+    
+}
